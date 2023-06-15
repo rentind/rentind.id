@@ -3,7 +3,10 @@ module.exports = {
   content: ["./index.html"],
   theme: {
     extend: {
-      colors: {},
+      colors: {
+        "golden-rush": "#FDB338",
+        "blue-sea": "#1776C0",
+      },
     },
   },
   plugins: [],
