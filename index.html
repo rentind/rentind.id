@@ -37,7 +37,73 @@
         </div>
         <div>
           <h2>Mulai Sewa Sekarang</h2>
-          <form></form>
+          <form>
+            <div>
+              <label for="product">Produk : </label>
+              <select name="" id="product">
+                <option value="" hidden>
+                  Buku, Kipas Angin, Oven Elektrik, Kompor Portabel dan
+                  lain-lain
+                </option>
+                <option value="buku">Buku</option>
+                <option value="kipas">Kipas Angin</option>
+                <option value="oven">Oven Elektrik</option>
+                <option value="kompor">Kompor Portable</option>
+                <option value="dll">Dan Lain Lain</option>
+              </select>
+            </div>
+
+            <div>
+              <div>
+                <label for="tgl_sewa">Tanggal Sewa :</label>
+                <input type="date" name="" id="tgl_sewa" />
+              </div>
+              <div>
+                <label for="wkt_sewa">Waktu Sewa :</label>
+                <input type="time" name="" id="wkt_sewa" />
+              </div>
+            </div>
+
+            <div>
+              <div>
+                <label for="tgl_kembali">Tanggal Dikembalikan :</label>
+                <input type="date" name="" id="tgl_kembali" />
+              </div>
+              <div>
+                <label for="wkt_kembali">Waktu Dikembalikan :</label>
+                <input type="time" name="" id="wkt_kembali" />
+              </div>
+            </div>
+
+            <div>
+              <p>Pilihan Pengembalian :</p>
+
+              <input type="radio" name="pengembalian" id="ambil" />
+              <label for="ambil">Ambil Ditempat</label>
+
+              <input type="radio" name="pengembalian" id="antar" />
+              <label for="antar">Diantar ke Tempat</label>
+
+              <input type="radio" name="pengembalian" id="ojol" />
+              <label for="ojol">Jasa Ojek Online</label>
+            </div>
+
+            <div>
+              <div>
+                <label for="kota">Pilih Kota / Kab : </label>
+                <select name="" id="kota">
+                  <option value="" hidden>Pilih Kota / Kab</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="kota">Pilih Kecamatan : </label>
+                <select name="" id="kecamatan">
+                  <option value="" hidden>Pilih Kecamatan</option>
+                </select>
+              </div>
+            </div>
+          </form>
         </div>
       </section>
     </main>
