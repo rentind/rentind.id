@@ -620,6 +620,14 @@ video {
   min-height: 150px;
 }
 
+.min-h-\[250px\] {
+  min-height: 250px;
+}
+
+.min-h-\[280px\] {
+  min-height: 280px;
+}
+
 .basis-2\/5 {
   flex-basis: 40%;
 }
