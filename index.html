@@ -21,7 +21,7 @@
     <main>
       <!--- ==================== HOME ===================== -->
       <section
-        class="relative flex min-h-screen items-center justify-center gap-x-28 px-10"
+        class="relative flex min-h-screen items-center justify-center gap-x-10 px-10"
       >
         <img
           src="assets/img/bg-home.svg"
@@ -46,9 +46,9 @@
             Mulai Sewa Sekarang dan rasakan keunggulan kami!
           </p>
         </div>
-        <div>
-          <h2>Mulai Sewa Sekarang</h2>
-          <form>
+        <div class="rounded-lg bg-white p-8 shadow-xl">
+          <h2 class="mb-4 font-medium">Mulai Sewa Sekarang</h2>
+          <form class="flex flex-col gap-y-6 text-gray-kelabu">
             <div>
               <label for="product">Produk : </label>
               <select name="" id="product">
@@ -64,56 +64,83 @@
               </select>
             </div>
 
-            <div>
-              <div>
+            <div class="flex justify-between">
+              <div class="flex basis-2/5 flex-col gap-y-1">
                 <label for="tgl_sewa">Tanggal Sewa :</label>
                 <input type="date" name="" id="tgl_sewa" />
               </div>
-              <div>
+              <div class="flex basis-2/5 flex-col gap-y-1">
                 <label for="wkt_sewa">Waktu Sewa :</label>
                 <input type="time" name="" id="wkt_sewa" />
               </div>
             </div>
 
-            <div>
-              <div>
+            <div class="flex justify-between">
+              <div class="flex basis-2/5 flex-col gap-y-1">
                 <label for="tgl_kembali">Tanggal Dikembalikan :</label>
                 <input type="date" name="" id="tgl_kembali" />
               </div>
-              <div>
+              <div class="flex basis-2/5 flex-col gap-y-1">
                 <label for="wkt_kembali">Waktu Dikembalikan :</label>
                 <input type="time" name="" id="wkt_kembali" />
               </div>
             </div>
 
-            <div>
+            <div class="mb-2">
               <p>Pilihan Pengembalian :</p>
-
-              <input type="radio" name="pengembalian" id="ambil" />
-              <label for="ambil">Ambil Ditempat</label>
-
-              <input type="radio" name="pengembalian" id="antar" />
-              <label for="antar">Diantar ke Tempat</label>
-
-              <input type="radio" name="pengembalian" id="ojol" />
-              <label for="ojol">Jasa Ojek Online</label>
+              <div class="flex justify-between">
+                <div>
+                  <input
+                    type="radio"
+                    name="pengembalian"
+                    id="ambil"
+                    class="align-middle"
+                  />
+                  <label for="ambil">Ambil Ditempat</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    name="pengembalian"
+                    id="antar"
+                    class="align-middle"
+                  />
+                  <label for="antar">Diantar ke Tempat</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    name="pengembalian"
+                    id="ojol"
+                    class="align-middle"
+                  />
+                  <label for="ojol">Jasa Ojek Online</label>
+                </div>
+              </div>
             </div>
 
-            <div>
-              <div>
+            <div class="flex">
+              <div class="w-1/2">
                 <label for="kota">Pilih Kota / Kab : </label>
-                <select name="" id="kota">
+                <select name="" id="kota" class="overflow-hidden">
                   <option value="" hidden>Pilih Kota / Kab</option>
                 </select>
               </div>
 
-              <div>
+              <div class="w-1/2">
                 <label for="kecamatan">Pilih Kecamatan : </label>
                 <select name="" id="kecamatan" disabled>
                   <option value="" hidden>Pilih Kecamatan</option>
                 </select>
               </div>
             </div>
+
+            <button
+              type="submit"
+              class="rounded-md bg-golden-rush py-3 font-semibold tracking-wide text-white"
+            >
+              SEWA SEKARANG
+            </button>
           </form>
         </div>
       </section>
