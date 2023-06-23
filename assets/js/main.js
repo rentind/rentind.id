@@ -29,3 +29,10 @@ selectKota.addEventListener("change", function () {
       );
     });
 });
+
+/* ==================== GET THIS YEAR ===================== */
+const year = document.getElementById("year");
+
+const date = new Date();
+
+year.innerText = date.getFullYear();
