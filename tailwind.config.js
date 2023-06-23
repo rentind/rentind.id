@@ -11,6 +11,9 @@ module.exports = {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
       },
+      gridTemplateColumns: {
+        "3-fit": "repeat(3,max-content)",
+      },
     },
   },
   plugins: [],
