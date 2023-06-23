@@ -36,3 +36,30 @@ const year = document.getElementById("year");
 const date = new Date();
 
 year.innerText = date.getFullYear();
+
+/* ==================== FAQ ===================== */
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach((item) => {
+  const faqHeader = item.querySelector(".faq-header");
+
+  faqHeader.addEventListener("click", () => {
+    const openItem = document.querySelector(".faq-open");
+
+    toggleItem(item);
+
+    if (openItem && openItem !== item) toggleItem(openItem);
+  });
+});
+
+const toggleItem = (item) => {
+  const faqContent = item.querySelector(".faq-content");
+
+  if (item.classList.contains("faq-open")) {
+    item.classList.remove("faq-open");
+    faqContent.removeAttribute("style");
+  } else {
+    item.classList.add("faq-open");
+    faqContent.style.height = faqContent.scrollHeight + 42 + "px";
+  }
+};

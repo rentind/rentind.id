@@ -9,3 +9,11 @@
 .button {
   @apply inline-block w-full rounded bg-golden-rush py-2 text-center font-semibold tracking-wide text-white;
 }
+
+.faq-open .faq-content {
+  @apply pt-4 !opacity-100;
+}
+
+.faq-open .faq-icon {
+  @apply rotate-180;
+}
