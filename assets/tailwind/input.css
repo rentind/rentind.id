@@ -17,3 +17,7 @@
 .faq-open .faq-icon {
   @apply rotate-180;
 }
+
+.faq-header {
+  @apply gap-x-3;
+}
