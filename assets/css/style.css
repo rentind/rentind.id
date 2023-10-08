@@ -1019,6 +1019,10 @@ video {
     width: 80%;
   }
 
+  .sm\:w-\[52ch\] {
+    width: 52ch;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
