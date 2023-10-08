@@ -1,626 +1,467 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rentind</title>
 
-    <!--- ==================== GOOGLE FONT ===================== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rentind</title>
 
-    <!--- ==================== BOX ICONS ===================== -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+  <!--- ==================== GOOGLE FONT ===================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-    <!--- ==================== STYLE CSS ===================== -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
+  <!--- ==================== BOX ICONS ===================== -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
-  <body class="font-inter">
-    <main>
-      <!--- ==================== HOME ===================== -->
-      <section
-        class="relative flex min-h-screen items-center justify-center gap-x-10 px-10"
-      >
-        <img
-          src="assets/img/bg-home.svg"
-          alt=""
-          aria-hidden="true"
-          class="absolute bottom-0 right-0 -z-10"
-        />
-        <div>
-          <img src="assets/img/logo.png" alt="rentind logo" width="225" />
-          <h1
-            class="my-6 text-3xl font-semibold leading-[1.6] text-[rgba(0,0,0,0.8)]"
-          >
-            MILIKI BARANG YANG ANDA <br />
-            BUTUHKAN, <span class="text-golden-rush">TANPA HARUS BELI!!</span>
-          </h1>
-          <p class="mb-10 text-lg text-gray-kelabu">
-            Solusi Sewa Barang yang terpercaya dan aman di Kota Makassar, yang
-            memiliki banyak barang yang disewakan dan memiliki’ kerja sama
-            terhadap mitra penyedia barang sewa.
-          </p>
-          <p class="text-xl font-semibold text-golden-rush">
-            Mulai Sewa Sekarang dan rasakan keunggulan kami!
-          </p>
-        </div>
-        <div class="rounded-lg bg-white p-8 shadow-xl">
-          <h2 class="mb-4 font-medium">Mulai Sewa Sekarang</h2>
-          <form class="flex flex-col gap-y-6 text-gray-kelabu">
-            <div>
-              <label for="product">Produk : </label>
-              <select name="" id="product">
-                <option value="" hidden>
-                  Buku, Kipas Angin, Oven Elektrik, Kompor Portabel dan
-                  lain-lain
-                </option>
-                <option value="buku">Buku</option>
-                <option value="kipas">Kipas Angin</option>
-                <option value="oven">Oven Elektrik</option>
-                <option value="kompor">Kompor Portable</option>
-                <option value="dll">Dan Lain Lain</option>
-              </select>
+  <!--- ==================== FAVICON ===================== -->
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+  <!--- ==================== STYLE CSS ===================== -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="font-inter">
+  <main>
+    <!--- ==================== HOME ===================== -->
+    <section class="relative flex min-h-screen items-center justify-center gap-x-10 px-10">
+      <img src="assets/img/bg-home.svg" alt="" aria-hidden="true" class="absolute bottom-0 right-0 -z-10" />
+      <div>
+        <img src="assets/img/logo.png" alt="rentind logo" width="225" />
+        <h1 class="my-6 text-3xl font-semibold leading-[1.6] text-[rgba(0,0,0,0.8)]">
+          MILIKI BARANG YANG ANDA <br />
+          BUTUHKAN, <span class="text-golden-rush">TANPA HARUS BELI!!</span>
+        </h1>
+        <p class="mb-10 text-lg text-gray-kelabu">
+          Solusi Sewa Barang yang terpercaya dan aman di Kota Makassar, yang
+          memiliki banyak barang yang disewakan dan memiliki’ kerja sama
+          terhadap mitra penyedia barang sewa.
+        </p>
+        <p class="text-xl font-semibold text-golden-rush">
+          Mulai Sewa Sekarang dan rasakan keunggulan kami!
+        </p>
+      </div>
+      <div class="rounded-lg bg-white p-8 shadow-xl">
+        <h2 class="mb-4 font-medium">Mulai Sewa Sekarang</h2>
+        <form class="flex flex-col gap-y-6 text-gray-kelabu">
+          <div>
+            <label for="product">Produk : </label>
+            <select name="" id="product">
+              <option value="" hidden>
+                Buku, Kipas Angin, Oven Elektrik, Kompor Portabel dan
+                lain-lain
+              </option>
+              <option value="buku">Buku</option>
+              <option value="kipas">Kipas Angin</option>
+              <option value="oven">Oven Elektrik</option>
+              <option value="kompor">Kompor Portable</option>
+              <option value="dll">Dan Lain Lain</option>
+            </select>
+          </div>
+
+          <div class="flex justify-between">
+            <div class="flex basis-2/5 flex-col gap-y-1">
+              <label for="tgl_sewa">Tanggal Sewa :</label>
+              <input type="date" name="" id="tgl_sewa" />
             </div>
+            <div class="flex basis-2/5 flex-col gap-y-1">
+              <label for="wkt_sewa">Waktu Sewa :</label>
+              <input type="time" name="" id="wkt_sewa" />
+            </div>
+          </div>
 
+          <div class="flex justify-between">
+            <div class="flex basis-2/5 flex-col gap-y-1">
+              <label for="tgl_kembali">Tanggal Dikembalikan :</label>
+              <input type="date" name="" id="tgl_kembali" />
+            </div>
+            <div class="flex basis-2/5 flex-col gap-y-1">
+              <label for="wkt_kembali">Waktu Dikembalikan :</label>
+              <input type="time" name="" id="wkt_kembali" />
+            </div>
+          </div>
+
+          <div class="mb-2">
+            <p>Pilihan Pengembalian :</p>
             <div class="flex justify-between">
-              <div class="flex basis-2/5 flex-col gap-y-1">
-                <label for="tgl_sewa">Tanggal Sewa :</label>
-                <input type="date" name="" id="tgl_sewa" />
+              <div>
+                <input type="radio" name="pengembalian" id="ambil" class="align-middle" />
+                <label for="ambil">Ambil Ditempat</label>
               </div>
-              <div class="flex basis-2/5 flex-col gap-y-1">
-                <label for="wkt_sewa">Waktu Sewa :</label>
-                <input type="time" name="" id="wkt_sewa" />
+              <div>
+                <input type="radio" name="pengembalian" id="antar" class="align-middle" />
+                <label for="antar">Diantar ke Tempat</label>
               </div>
-            </div>
-
-            <div class="flex justify-between">
-              <div class="flex basis-2/5 flex-col gap-y-1">
-                <label for="tgl_kembali">Tanggal Dikembalikan :</label>
-                <input type="date" name="" id="tgl_kembali" />
+              <div>
+                <input type="radio" name="pengembalian" id="ojol" class="align-middle" />
+                <label for="ojol">Jasa Ojek Online</label>
               </div>
-              <div class="flex basis-2/5 flex-col gap-y-1">
-                <label for="wkt_kembali">Waktu Dikembalikan :</label>
-                <input type="time" name="" id="wkt_kembali" />
-              </div>
-            </div>
-
-            <div class="mb-2">
-              <p>Pilihan Pengembalian :</p>
-              <div class="flex justify-between">
-                <div>
-                  <input
-                    type="radio"
-                    name="pengembalian"
-                    id="ambil"
-                    class="align-middle"
-                  />
-                  <label for="ambil">Ambil Ditempat</label>
-                </div>
-                <div>
-                  <input
-                    type="radio"
-                    name="pengembalian"
-                    id="antar"
-                    class="align-middle"
-                  />
-                  <label for="antar">Diantar ke Tempat</label>
-                </div>
-                <div>
-                  <input
-                    type="radio"
-                    name="pengembalian"
-                    id="ojol"
-                    class="align-middle"
-                  />
-                  <label for="ojol">Jasa Ojek Online</label>
-                </div>
-              </div>
-            </div>
-
-            <div class="flex flex-col gap-y-2">
-              <label for="kota">Pilih Kota / Kab : </label>
-              <select name="" id="kota" class="overflow-hidden">
-                <option value="" hidden>Pilih Kota / Kab</option>
-              </select>
-            </div>
-
-            <div class="flex flex-col gap-y-2">
-              <label for="kecamatan">Pilih Kecamatan : </label>
-              <select name="" id="kecamatan" disabled>
-                <option value="" hidden>Pilih Kecamatan</option>
-              </select>
-            </div>
-
-            <button type="submit" class="button">SEWA SEKARANG</button>
-          </form>
-        </div>
-      </section>
-
-      <!--- ==================== ITEMS ===================== -->
-      <section class="rounded-b-xl bg-[#1AB6F10D] px-10 py-20 text-center">
-        <h2 class="section__title">Barang yang disewakan</h2>
-        <p class="mb-12 text-gray-kelabu">
-          Berikut ini adalah barang yang akan disewakan
-        </p>
-        <div class="grid grid-cols-4 gap-x-10">
-          <div class="rounded-b-lg bg-white text-left hover:shadow-lg">
-            <div
-              class="flex min-h-[280px] items-center rounded-t-lg bg-[#42A6EE] p-5"
-            >
-              <img src="assets/img/rent/rent-1.png" alt="tenda" />
-            </div>
-
-            <div class="p-5">
-              <h3 class="text-xl font-bold">Tenda</h3>
-              <p class="font-semibold">
-                <span class="text-golden-rush">30.000</span>/Hari
-              </p>
-              <hr class="my-4" />
-              <div class="mb-2 flex items-center gap-x-2">
-                <img
-                  src="assets/img/users/user-1.png"
-                  alt="Irman"
-                  width="35"
-                  height="35"
-                />
-                <h4 class="font-semibold">Irman</h4>
-              </div>
-              <p class="text-sm text-gray-kelabu">Jalan : Jl. Sukaria 10</p>
-              <p class="text-sm text-gray-kelabu">Kontak : 082341232567</p>
-              <a href="#" class="button mt-4">Rental Sekarang</a>
             </div>
           </div>
 
-          <div class="rounded-b-lg bg-white text-left hover:shadow-lg">
-            <div
-              class="flex min-h-[280px] items-center rounded-t-lg bg-[#42A6EE] p-5"
-            >
-              <img src="assets/img/rent/rent-2.png" alt="Koper" />
-            </div>
-
-            <div class="p-5">
-              <h3 class="text-xl font-bold">Koper</h3>
-              <p class="font-semibold">
-                <span class="text-golden-rush">15.000</span>/Hari
-              </p>
-              <hr class="my-4" />
-              <div class="mb-2 flex items-center gap-x-2">
-                <img
-                  src="assets/img/users/user-2.png"
-                  alt="Ishan"
-                  width="35"
-                  height="35"
-                />
-                <h4 class="font-semibold">Ishan</h4>
-              </div>
-              <p class="text-sm text-gray-kelabu">Jalan : Jl. Sukarno</p>
-              <p class="text-sm text-gray-kelabu">Kontak : 085387291886</p>
-              <a href="#" class="button mt-4">Rental Sekarang</a>
-            </div>
+          <div class="flex flex-col gap-y-2">
+            <label for="kota">Pilih Kota / Kab : </label>
+            <select name="" id="kota" class="overflow-hidden">
+              <option value="" hidden>Pilih Kota / Kab</option>
+            </select>
           </div>
 
-          <div class="rounded-b-lg bg-white text-left hover:shadow-lg">
-            <div
-              class="flex min-h-[280px] items-center rounded-t-lg bg-[#42A6EE] p-5"
-            >
-              <img src="assets/img/rent/rent-3.png" alt="Kipas Angin" />
-            </div>
-
-            <div class="p-5">
-              <h3 class="text-xl font-bold">Kipas Angin</h3>
-              <p class="font-semibold">
-                <span class="text-golden-rush">25.000</span>/Hari
-              </p>
-              <hr class="my-4" />
-              <div class="mb-2 flex items-center gap-x-2">
-                <img
-                  src="assets/img/users/user-3.png"
-                  alt="Dhini Anggi"
-                  width="35"
-                  height="35"
-                />
-                <h4 class="font-semibold">Dhini Anggi</h4>
-              </div>
-              <p class="text-sm text-gray-kelabu">Jalan : Jl. Sukamaju 5</p>
-              <p class="text-sm text-gray-kelabu">Kontak : 082547382986</p>
-              <a href="#" class="button mt-4">Rental Sekarang</a>
-            </div>
+          <div class="flex flex-col gap-y-2">
+            <label for="kecamatan">Pilih Kecamatan : </label>
+            <select name="" id="kecamatan" disabled>
+              <option value="" hidden>Pilih Kecamatan</option>
+            </select>
           </div>
 
-          <div class="rounded-b-lg bg-white text-left hover:shadow-lg">
-            <div
-              class="flex min-h-[280px] items-center rounded-t-lg bg-[#42A6EE] p-5"
-            >
-              <img src="assets/img/rent/rent-4.png" alt="Kompor fortable" />
-            </div>
+          <button type="submit" class="button">SEWA SEKARANG</button>
+        </form>
+      </div>
+    </section>
 
-            <div class="p-5">
-              <h3 class="text-xl font-bold">Kompor fortable</h3>
-              <p class="font-semibold">
-                <span class="text-golden-rush">20.000</span>/Hari
-              </p>
-              <hr class="my-4" />
-              <div class="mb-2 flex items-center gap-x-2">
-                <img
-                  src="assets/img/users/user-4.png"
-                  alt="Irul Isman"
-                  width="35"
-                  height="35"
-                />
-                <h4 class="font-semibold">Irul Isman</h4>
-              </div>
-              <p class="text-sm text-gray-kelabu">
-                Jalan : Jl. AMD Antang Raya
-              </p>
-              <p class="text-sm text-gray-kelabu">Kontak : 085324168745</p>
-              <a href="#" class="button mt-4">Rental Sekarang</a>
-            </div>
+    <!--- ==================== ITEMS ===================== -->
+    <section class="rounded-b-xl bg-[#1AB6F10D] px-10 py-20 text-center">
+      <h2 class="section__title">Barang yang disewakan</h2>
+      <p class="mb-12 text-gray-kelabu">
+        Berikut ini adalah barang yang akan disewakan
+      </p>
+      <div class="grid grid-cols-4 gap-x-10">
+        <div class="rounded-b-lg bg-white text-left hover:shadow-lg">
+          <div class="flex min-h-[280px] items-center rounded-t-lg bg-[#42A6EE] p-5">
+            <img src="assets/img/rent/rent-1.png" alt="tenda" />
           </div>
-        </div>
-      </section>
 
-      <!--- ==================== REASONS ===================== -->
-      <section class="px-10 py-20 text-center">
-        <h2 class="section__title">Mengapa Pilih Rentind?</h2>
-        <p class="mb-12 text-gray-kelabu">
-          Tempat penyedia barang sewa yang aman dan terpercaya
-        </p>
-
-        <div class="grid grid-cols-3 gap-x-10 gap-y-5 px-10">
-          <div
-            class="flex h-[250px] flex-col items-center justify-center rounded-xl hover:shadow-xl"
-          >
-            <img
-              src="assets/img/icons/icon-1.svg"
-              alt=""
-              width="60"
-              height="60"
-              aria-hidden="true"
-            />
-            <h3 class="mb-2 mt-4 text-xl font-bold">Product</h3>
-            <p class="text-gray-kelabu">
-              Setiap barang yang disewakan <br />
-              memiliki kualitas yang baik
+          <div class="p-5">
+            <h3 class="text-xl font-bold">Tenda</h3>
+            <p class="font-semibold">
+              <span class="text-golden-rush">30.000</span>/Hari
             </p>
+            <hr class="my-4" />
+            <div class="mb-2 flex items-center gap-x-2">
+              <img src="assets/img/users/user-1.png" alt="Irman" width="35" height="35" />
+              <h4 class="font-semibold">Irman</h4>
+            </div>
+            <p class="text-sm text-gray-kelabu">Jalan : Jl. Sukaria 10</p>
+            <p class="text-sm text-gray-kelabu">Kontak : 082341232567</p>
+            <a href="#" class="button mt-4">Rental Sekarang</a>
+          </div>
+        </div>
+
+        <div class="rounded-b-lg bg-white text-left hover:shadow-lg">
+          <div class="flex min-h-[280px] items-center rounded-t-lg bg-[#42A6EE] p-5">
+            <img src="assets/img/rent/rent-2.png" alt="Koper" />
           </div>
 
-          <div
-            class="flex h-[250px] flex-col items-center justify-center rounded-xl hover:shadow-xl"
-          >
-            <img
-              src="assets/img/icons/icon-2.svg"
-              alt=""
-              width="60"
-              height="60"
-              aria-hidden="true"
-            />
-            <h3 class="mb-2 mt-4 text-xl font-bold">Payment</h3>
-            <p class="text-gray-kelabu">
-              Memiliki transaksi <br />
-              yang mudah dan aman
+          <div class="p-5">
+            <h3 class="text-xl font-bold">Koper</h3>
+            <p class="font-semibold">
+              <span class="text-golden-rush">15.000</span>/Hari
             </p>
+            <hr class="my-4" />
+            <div class="mb-2 flex items-center gap-x-2">
+              <img src="assets/img/users/user-2.png" alt="Ishan" width="35" height="35" />
+              <h4 class="font-semibold">Ishan</h4>
+            </div>
+            <p class="text-sm text-gray-kelabu">Jalan : Jl. Sukarno</p>
+            <p class="text-sm text-gray-kelabu">Kontak : 085387291886</p>
+            <a href="#" class="button mt-4">Rental Sekarang</a>
+          </div>
+        </div>
+
+        <div class="rounded-b-lg bg-white text-left hover:shadow-lg">
+          <div class="flex min-h-[280px] items-center rounded-t-lg bg-[#42A6EE] p-5">
+            <img src="assets/img/rent/rent-3.png" alt="Kipas Angin" />
           </div>
 
-          <div
-            class="flex h-[250px] flex-col items-center justify-center rounded-xl hover:shadow-xl"
-          >
-            <img
-              src="assets/img/icons/icon-3.svg"
-              alt=""
-              width="60"
-              height="60"
-              aria-hidden="true"
-            />
-            <h3 class="mb-2 mt-4 text-xl font-bold">Partnership</h3>
-            <p class="text-gray-kelabu">
-              Memiliki mitra yang <br />
-              banyak dan terpercaya
+          <div class="p-5">
+            <h3 class="text-xl font-bold">Kipas Angin</h3>
+            <p class="font-semibold">
+              <span class="text-golden-rush">25.000</span>/Hari
             </p>
+            <hr class="my-4" />
+            <div class="mb-2 flex items-center gap-x-2">
+              <img src="assets/img/users/user-3.png" alt="Dhini Anggi" width="35" height="35" />
+              <h4 class="font-semibold">Dhini Anggi</h4>
+            </div>
+            <p class="text-sm text-gray-kelabu">Jalan : Jl. Sukamaju 5</p>
+            <p class="text-sm text-gray-kelabu">Kontak : 082547382986</p>
+            <a href="#" class="button mt-4">Rental Sekarang</a>
+          </div>
+        </div>
+
+        <div class="rounded-b-lg bg-white text-left hover:shadow-lg">
+          <div class="flex min-h-[280px] items-center rounded-t-lg bg-[#42A6EE] p-5">
+            <img src="assets/img/rent/rent-4.png" alt="Kompor fortable" />
           </div>
 
-          <div
-            class="flex h-[250px] flex-col items-center justify-center rounded-xl hover:shadow-xl"
-          >
-            <img
-              src="assets/img/icons/icon-4.svg"
-              alt=""
-              width="60"
-              height="60"
-              aria-hidden="true"
-            />
-            <h3 class="mb-2 mt-4 text-xl font-bold">Communication</h3>
-            <p class="text-gray-kelabu">
-              Memudahkan pengguna dalam <br />
-              komunikasi dengan pemilik sewa
+          <div class="p-5">
+            <h3 class="text-xl font-bold">Kompor fortable</h3>
+            <p class="font-semibold">
+              <span class="text-golden-rush">20.000</span>/Hari
             </p>
-          </div>
-
-          <div
-            class="flex h-[250px] flex-col items-center justify-center rounded-xl hover:shadow-xl"
-          >
-            <img
-              src="assets/img/icons/icon-5.svg"
-              alt=""
-              width="60"
-              height="60"
-              aria-hidden="true"
-            />
-            <h3 class="mb-2 mt-4 text-xl font-bold">Security</h3>
-            <p class="text-gray-kelabu">
-              Memiliki tingkat <br />
-              keamanan yang baik
+            <hr class="my-4" />
+            <div class="mb-2 flex items-center gap-x-2">
+              <img src="assets/img/users/user-4.png" alt="Irul Isman" width="35" height="35" />
+              <h4 class="font-semibold">Irul Isman</h4>
+            </div>
+            <p class="text-sm text-gray-kelabu">
+              Jalan : Jl. AMD Antang Raya
             </p>
+            <p class="text-sm text-gray-kelabu">Kontak : 085324168745</p>
+            <a href="#" class="button mt-4">Rental Sekarang</a>
           </div>
-
-          <div
-            class="flex h-[250px] flex-col items-center justify-center rounded-xl hover:shadow-xl"
-          >
-            <img
-              src="assets/img/icons/icon-6.svg"
-              alt=""
-              width="60"
-              height="60"
-              aria-hidden="true"
-            />
-            <h3 class="mb-2 mt-4 text-xl font-bold">Delivery</h3>
-            <p class="text-gray-kelabu">
-              Memiliki banyak opsi untuk <br />
-              pengataran dan pengembalian barang
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!--- ==================== ABOUT ===================== -->
-      <section class="flex items-center justify-center gap-x-14 p-20">
-        <div>
-          <img
-            src="assets/img/about.png"
-            alt=""
-            aria-hidden="true"
-            width="350"
-            height="350"
-            class="shadow-xl"
-          />
-        </div>
-        <div>
-          <h2 class="section__title">Rentind</h2>
-          <h3 class="-mt-1 mb-6 font-medium text-blue-sea">
-            Rental everything you need
-          </h3>
-          <p class="w-[48ch] text-gray-kelabu">
-            Rentind adalah sebuah platfrom penyewaan barang yang terpercaya,
-            aman, dan terjangkau. Dan menghubungkan antara penyewa barang dan
-            orang yang ingin menyewa barang.
-          </p>
-        </div>
-      </section>
-
-      <!--- ==================== FAQ ===================== -->
-      <section class="bg-[#1AB6F10D] px-10 py-20 text-center">
-        <h2 class="section__title">Pertanyaan Umum</h2>
-        <p class="text-gray-kelabu">
-          Berikut adalah pertanyaan yang sering ditanyakan
-        </p>
-
-        <div class="mx-auto mt-10 flex w-3/5 flex-col gap-y-10 text-left">
-          <div class="faq-item rounded-xl bg-white px-10 shadow-md">
-            <div
-              class="faq-header relative z-10 flex items-center justify-between pt-6"
-            >
-              <h3 class="text-xl font-semibold text-blue-sea">
-                Apa itu Rentind?
-              </h3>
-              <span
-                class="flex h-[35px] w-[35px] items-center justify-center rounded-full bg-[#EFEFEF]"
-              >
-                <i
-                  class="bx bx-chevron-down faq-icon text-2xl transition-all"
-                ></i>
-              </span>
-            </div>
-            <div class="faq-content h-0 pb-6 opacity-0 transition-all">
-              <p class="d-none w-10/12 text-gray-kelabu">
-                Rentind merupakan sebuah platfrom penyewaan barang yang berbasis
-                website. Bertujuan untuk mengatasi masalah masyarakat secara
-                umum membutuhkan barang dan yang ingin meminjamkan barangnya.
-                Platfrom ini akan menghubungkan antara penyewa barang dan orang
-                yang ingin menyewakan barangnya.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item rounded-xl bg-white px-10 shadow-md">
-            <div
-              class="faq-header relative z-10 flex items-center justify-between pt-6"
-            >
-              <h3 class="text-xl font-semibold text-blue-sea">
-                Mengapa harus sewa di Rentind?
-              </h3>
-              <span
-                class="flex h-[35px] w-[35px] items-center justify-center rounded-full bg-[#EFEFEF]"
-              >
-                <i
-                  class="bx bx-chevron-down faq-icon text-2xl transition-all"
-                ></i>
-              </span>
-            </div>
-            <div class="faq-content h-0 pb-6 opacity-0 transition-all">
-              <p class="d-none w-10/12 text-gray-kelabu">
-                Rentind merupakan sebuah platfrom penyewaan barang yang berbasis
-                website. Bertujuan untuk mengatasi masalah masyarakat secara
-                umum membutuhkan barang dan yang ingin meminjamkan barangnya.
-                Platfrom ini akan menghubungkan antara penyewa barang dan orang
-                yang ingin menyewakan barangnya.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item rounded-xl bg-white px-10 shadow-md">
-            <div
-              class="faq-header relative z-10 flex items-center justify-between pt-6"
-            >
-              <h3 class="text-xl font-semibold text-blue-sea">
-                Apa saja Keunggulan ketika menyewa di Rentind?
-              </h3>
-              <span
-                class="flex h-[35px] w-[35px] items-center justify-center rounded-full bg-[#EFEFEF]"
-              >
-                <i
-                  class="bx bx-chevron-down faq-icon text-2xl transition-all"
-                ></i>
-              </span>
-            </div>
-            <div class="faq-content h-0 pb-6 opacity-0 transition-all">
-              <p class="d-none w-10/12 text-gray-kelabu">
-                Rentind. id merupakan sebuah platfrom penyewaan barang yang
-                berbasis website. Bertujuan untuk mengatasi masalah masyarakat
-                secara umum membutuhkan barang dan yang ingin meminjamkan
-                barangnya. Platfrom ini akan menghubungkan antara penyewa barang
-                dan orang yang ingin menyewakan barangnya.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item rounded-xl bg-white px-10 shadow-md">
-            <div
-              class="faq-header relative z-10 flex items-center justify-between pt-6"
-            >
-              <h3 class="text-xl font-semibold text-blue-sea">
-                Apakah Rentind sudah berbadan Hukum?
-              </h3>
-              <span
-                class="flex h-[35px] w-[35px] items-center justify-center rounded-full bg-[#EFEFEF]"
-              >
-                <i
-                  class="bx bx-chevron-down faq-icon text-2xl transition-all"
-                ></i>
-              </span>
-            </div>
-            <div class="faq-content h-0 pb-6 opacity-0 transition-all">
-              <p class="d-none w-10/12 text-gray-kelabu">
-                Rentind. id merupakan sebuah platfrom penyewaan barang yang
-                berbasis website. Bertujuan untuk mengatasi masalah masyarakat
-                secara umum membutuhkan barang dan yang ingin meminjamkan
-                barangnya. Platfrom ini akan menghubungkan antara penyewa barang
-                dan orang yang ingin menyewakan barangnya.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--- ==================== CONTACT ===================== -->
-      <section class="py-20 text-center">
-        <img
-          src="assets/img/logo-circle.png"
-          alt="rentind logo"
-          class="mb-10 inline"
-          width="160"
-          height="160"
-        />
-        <h2 class="section__title mb-4">Butuh barang untuk keperluan?</h2>
-        <p class="mx-auto mb-6 w-[52ch] text-gray-kelabu">
-          Rentind hadir tengah anda dan kami siap membantu anda dalam memenuhi
-          kebutuhan anda, segera hubungi kami untuk informasi lebih lanjut
-        </p>
-        <button type="button" class="button !w-[initial] !rounded-full px-4">
-          Hubungi Kami
-        </button>
-      </section>
-    </main>
-
-    <!--- ==================== FOOTER ===================== -->
-    <footer class="bg-[#6A8AFE] pt-20 text-sm">
-      <div
-        class="mx-auto grid w-4/6 grid-cols-3-fit justify-center gap-x-10 border-b border-white pb-10 text-sm text-white"
-      >
-        <div>
-          <img src="assets/img/logo-white.png" alt="Rentind Logo" width="200" />
-          <p class="my-4">#Rental Everything your need</p>
-          <p class="w-[32ch]">
-            Jasa sewa barang untuk memenuhi keperluan yang terpercaya dan aman.
-            Miliki sekarang barang yang kamu inginkan tanpa harus membelinya.
-          </p>
-        </div>
-        <div>
-          <h3 class="text-lg font-semibold">Kontak</h3>
-          <ul class="mt-4 flex flex-col gap-y-2">
-            <li>
-              <a
-                href="https://wa.me/6285946611465"
-                target="_blank"
-                rel="noopener noreferrer"
-                >+62 859-4661-1465
-              </a>
-            </li>
-            <li>
-              <a href="mailto:rentindacademy@gmail.com">
-                rentindacademy@gmail.com
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://goo.gl/maps/4X25BQeWJMptamsu7"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Ruko I Walk J/10 Ciputra Citraland <br />
-                Celebes, Jl. Tun Abdul Razak, <br />
-                Tombolo, Kec. Somba Opu, <br />
-                Kabupaten Gowa, Sulawesi Selatan <br />
-                92114
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="text-lg font-semibold">Ikuti Kami</h3>
-          <ul class="mt-2 flex gap-x-4">
-            <li>
-              <a
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bx bxl-instagram text-2xl"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.facebook.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bx bxl-facebook-circle text-2xl"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://linkedin.com/"
-                target="_blank"
-                rel="noopener noreferrer "
-              >
-                <i class="bx bxl-linkedin-square text-2xl"></i>
-              </a>
-            </li>
-          </ul>
         </div>
       </div>
-      <p class="py-6 text-center text-xs text-white">
-        © Rentind. id. All right reserved, <span id="year"></span>
-      </p>
-    </footer>
+    </section>
 
-    <!--- ==================== MAIN JAVASCRIPT ===================== -->
-    <script src="assets/js/main.js"></script>
-  </body>
+    <!--- ==================== REASONS ===================== -->
+    <section class="px-10 py-20 text-center">
+      <h2 class="section__title">Mengapa Pilih Rentind?</h2>
+      <p class="mb-12 text-gray-kelabu">
+        Tempat penyedia barang sewa yang aman dan terpercaya
+      </p>
+
+      <div class="grid grid-cols-3 gap-x-10 gap-y-5 px-10">
+        <div class="flex h-[250px] flex-col items-center justify-center rounded-xl hover:shadow-xl">
+          <img src="assets/img/icons/icon-1.svg" alt="" width="60" height="60" aria-hidden="true" />
+          <h3 class="mb-2 mt-4 text-xl font-bold">Product</h3>
+          <p class="text-gray-kelabu">
+            Setiap barang yang disewakan <br />
+            memiliki kualitas yang baik
+          </p>
+        </div>
+
+        <div class="flex h-[250px] flex-col items-center justify-center rounded-xl hover:shadow-xl">
+          <img src="assets/img/icons/icon-2.svg" alt="" width="60" height="60" aria-hidden="true" />
+          <h3 class="mb-2 mt-4 text-xl font-bold">Payment</h3>
+          <p class="text-gray-kelabu">
+            Memiliki transaksi <br />
+            yang mudah dan aman
+          </p>
+        </div>
+
+        <div class="flex h-[250px] flex-col items-center justify-center rounded-xl hover:shadow-xl">
+          <img src="assets/img/icons/icon-3.svg" alt="" width="60" height="60" aria-hidden="true" />
+          <h3 class="mb-2 mt-4 text-xl font-bold">Partnership</h3>
+          <p class="text-gray-kelabu">
+            Memiliki mitra yang <br />
+            banyak dan terpercaya
+          </p>
+        </div>
+
+        <div class="flex h-[250px] flex-col items-center justify-center rounded-xl hover:shadow-xl">
+          <img src="assets/img/icons/icon-4.svg" alt="" width="60" height="60" aria-hidden="true" />
+          <h3 class="mb-2 mt-4 text-xl font-bold">Communication</h3>
+          <p class="text-gray-kelabu">
+            Memudahkan pengguna dalam <br />
+            komunikasi dengan pemilik sewa
+          </p>
+        </div>
+
+        <div class="flex h-[250px] flex-col items-center justify-center rounded-xl hover:shadow-xl">
+          <img src="assets/img/icons/icon-5.svg" alt="" width="60" height="60" aria-hidden="true" />
+          <h3 class="mb-2 mt-4 text-xl font-bold">Security</h3>
+          <p class="text-gray-kelabu">
+            Memiliki tingkat <br />
+            keamanan yang baik
+          </p>
+        </div>
+
+        <div class="flex h-[250px] flex-col items-center justify-center rounded-xl hover:shadow-xl">
+          <img src="assets/img/icons/icon-6.svg" alt="" width="60" height="60" aria-hidden="true" />
+          <h3 class="mb-2 mt-4 text-xl font-bold">Delivery</h3>
+          <p class="text-gray-kelabu">
+            Memiliki banyak opsi untuk <br />
+            pengataran dan pengembalian barang
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--- ==================== ABOUT ===================== -->
+    <section class="flex items-center justify-center gap-x-14 p-20">
+      <div>
+        <img src="assets/img/about.png" alt="" aria-hidden="true" width="350" height="350" class="shadow-xl" />
+      </div>
+      <div>
+        <h2 class="section__title">Rentind</h2>
+        <h3 class="-mt-1 mb-6 font-medium text-blue-sea">
+          Rental everything you need
+        </h3>
+        <p class="w-[48ch] text-gray-kelabu">
+          Rentind adalah sebuah platfrom penyewaan barang yang terpercaya,
+          aman, dan terjangkau. Dan menghubungkan antara penyewa barang dan
+          orang yang ingin menyewa barang.
+        </p>
+      </div>
+    </section>
+
+    <!--- ==================== FAQ ===================== -->
+    <section class="bg-[#1AB6F10D] px-10 py-20 text-center">
+      <h2 class="section__title">Pertanyaan Umum</h2>
+      <p class="text-gray-kelabu">
+        Berikut adalah pertanyaan yang sering ditanyakan
+      </p>
+
+      <div class="mx-auto mt-10 flex w-3/5 flex-col gap-y-10 text-left">
+        <div class="faq-item rounded-xl bg-white px-10 shadow-md">
+          <div class="faq-header relative z-10 flex items-center justify-between pt-6">
+            <h3 class="text-xl font-semibold text-blue-sea">
+              Apa itu Rentind?
+            </h3>
+            <span class="flex h-[35px] w-[35px] items-center justify-center rounded-full bg-[#EFEFEF]">
+              <i class="bx bx-chevron-down faq-icon text-2xl transition-all"></i>
+            </span>
+          </div>
+          <div class="faq-content h-0 pb-6 opacity-0 transition-all">
+            <p class="d-none w-10/12 text-gray-kelabu">
+              Rentind merupakan sebuah platfrom penyewaan barang yang berbasis
+              website. Bertujuan untuk mengatasi masalah masyarakat secara
+              umum membutuhkan barang dan yang ingin meminjamkan barangnya.
+              Platfrom ini akan menghubungkan antara penyewa barang dan orang
+              yang ingin menyewakan barangnya.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item rounded-xl bg-white px-10 shadow-md">
+          <div class="faq-header relative z-10 flex items-center justify-between pt-6">
+            <h3 class="text-xl font-semibold text-blue-sea">
+              Mengapa harus sewa di Rentind?
+            </h3>
+            <span class="flex h-[35px] w-[35px] items-center justify-center rounded-full bg-[#EFEFEF]">
+              <i class="bx bx-chevron-down faq-icon text-2xl transition-all"></i>
+            </span>
+          </div>
+          <div class="faq-content h-0 pb-6 opacity-0 transition-all">
+            <p class="d-none w-10/12 text-gray-kelabu">
+              Rentind merupakan sebuah platfrom penyewaan barang yang berbasis
+              website. Bertujuan untuk mengatasi masalah masyarakat secara
+              umum membutuhkan barang dan yang ingin meminjamkan barangnya.
+              Platfrom ini akan menghubungkan antara penyewa barang dan orang
+              yang ingin menyewakan barangnya.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item rounded-xl bg-white px-10 shadow-md">
+          <div class="faq-header relative z-10 flex items-center justify-between pt-6">
+            <h3 class="text-xl font-semibold text-blue-sea">
+              Apa saja Keunggulan ketika menyewa di Rentind?
+            </h3>
+            <span class="flex h-[35px] w-[35px] items-center justify-center rounded-full bg-[#EFEFEF]">
+              <i class="bx bx-chevron-down faq-icon text-2xl transition-all"></i>
+            </span>
+          </div>
+          <div class="faq-content h-0 pb-6 opacity-0 transition-all">
+            <p class="d-none w-10/12 text-gray-kelabu">
+              Rentind. id merupakan sebuah platfrom penyewaan barang yang
+              berbasis website. Bertujuan untuk mengatasi masalah masyarakat
+              secara umum membutuhkan barang dan yang ingin meminjamkan
+              barangnya. Platfrom ini akan menghubungkan antara penyewa barang
+              dan orang yang ingin menyewakan barangnya.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item rounded-xl bg-white px-10 shadow-md">
+          <div class="faq-header relative z-10 flex items-center justify-between pt-6">
+            <h3 class="text-xl font-semibold text-blue-sea">
+              Apakah Rentind sudah berbadan Hukum?
+            </h3>
+            <span class="flex h-[35px] w-[35px] items-center justify-center rounded-full bg-[#EFEFEF]">
+              <i class="bx bx-chevron-down faq-icon text-2xl transition-all"></i>
+            </span>
+          </div>
+          <div class="faq-content h-0 pb-6 opacity-0 transition-all">
+            <p class="d-none w-10/12 text-gray-kelabu">
+              Rentind. id merupakan sebuah platfrom penyewaan barang yang
+              berbasis website. Bertujuan untuk mengatasi masalah masyarakat
+              secara umum membutuhkan barang dan yang ingin meminjamkan
+              barangnya. Platfrom ini akan menghubungkan antara penyewa barang
+              dan orang yang ingin menyewakan barangnya.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--- ==================== CONTACT ===================== -->
+    <section class="py-20 text-center">
+      <img src="assets/img/logo-circle.png" alt="rentind logo" class="mb-10 inline" width="160" height="160" />
+      <h2 class="section__title mb-4">Butuh barang untuk keperluan?</h2>
+      <p class="mx-auto mb-6 w-[52ch] text-gray-kelabu">
+        Rentind hadir tengah anda dan kami siap membantu anda dalam memenuhi
+        kebutuhan anda, segera hubungi kami untuk informasi lebih lanjut
+      </p>
+      <button type="button" class="button !w-[initial] !rounded-full px-4">
+        Hubungi Kami
+      </button>
+    </section>
+  </main>
+
+  <!--- ==================== FOOTER ===================== -->
+  <footer class="bg-[#6A8AFE] pt-20 text-sm">
+    <div
+      class="mx-auto grid w-4/6 grid-cols-3-fit justify-center gap-x-10 border-b border-white pb-10 text-sm text-white">
+      <div>
+        <img src="assets/img/logo-white.png" alt="Rentind Logo" width="200" />
+        <p class="my-4">#Rental Everything your need</p>
+        <p class="w-[32ch]">
+          Jasa sewa barang untuk memenuhi keperluan yang terpercaya dan aman.
+          Miliki sekarang barang yang kamu inginkan tanpa harus membelinya.
+        </p>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold">Kontak</h3>
+        <ul class="mt-4 flex flex-col gap-y-2">
+          <li>
+            <a href="https://wa.me/6285946611465" target="_blank" rel="noopener noreferrer">+62 859-4661-1465
+            </a>
+          </li>
+          <li>
+            <a href="mailto:rentindacademy@gmail.com">
+              rentindacademy@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="https://goo.gl/maps/4X25BQeWJMptamsu7" target="_blank" rel="noopener noreferrer">
+              Ruko I Walk J/10 Ciputra Citraland <br />
+              Celebes, Jl. Tun Abdul Razak, <br />
+              Tombolo, Kec. Somba Opu, <br />
+              Kabupaten Gowa, Sulawesi Selatan <br />
+              92114
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold">Ikuti Kami</h3>
+        <ul class="mt-2 flex gap-x-4">
+          <li>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+              <i class="bx bxl-instagram text-2xl"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+              <i class="bx bxl-facebook-circle text-2xl"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer ">
+              <i class="bx bxl-linkedin-square text-2xl"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p class="py-6 text-center text-xs text-white">
+      © Rentind. id. All right reserved, <span id="year"></span>
+    </p>
+  </footer>
+
+  <!--- ==================== MAIN JAVASCRIPT ===================== -->
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>
